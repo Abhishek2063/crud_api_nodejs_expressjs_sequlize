@@ -17,6 +17,8 @@ app.get('/', (req, res) => {
 const userRoutes = require('./routes/userRoutes');
 app.use('/api/user', userRoutes);
 
+const imageRoutes = require('./routes/imageRoutes');
+app.use('/api/image', imageRoutes);
 
 db.sequelize.sync().then(() => {
   app.listen(PORT, () => {

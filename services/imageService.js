@@ -14,7 +14,7 @@ class ImageService {
 
       const imageName = uploadedFile.filename;
       const imagePath = path.join('uploads', imageName);
-
+console.log(imagePath,"imagePath");
       const image = await ProfileImage.create({ profile_pic: imageName, user_id });
 
       return image; // You can return the image URL for viewing

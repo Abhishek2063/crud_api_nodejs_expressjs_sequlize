@@ -18,3 +18,4 @@ out/
 # seeders/
 # config/config.json
 .env
+uploads/
